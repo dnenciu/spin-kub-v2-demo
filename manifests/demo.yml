@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: primary
-        image: docker.pkg.github.com/dnenciu/spin-kub-v2-demo/image:latest
+        image: ghcr.io/dnenciu/spin-kub-v2-demo/image:latest
         ports:
         - containerPort: 8000
         readinessProbe:
