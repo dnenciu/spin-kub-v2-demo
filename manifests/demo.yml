@@ -32,6 +32,8 @@ spec:
       containers:
       - name: primary
         image: ghcr.io/dnenciu/spin-kub-v2-demo/image:latest
+      imagePullSecrets:
+        - name: regcred
         ports:
         - containerPort: 8000
         readinessProbe:
